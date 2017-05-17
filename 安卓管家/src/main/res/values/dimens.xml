@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主页面中的尺寸 -->
+    <dimen name="home_title_szie">20sp</dimen>
+    <dimen name="home_title_padding">4dp</dimen>
+    <dimen name="size_tv__percent">60sp</dimen>
+    <dimen name="size_tv_percent_num">22sp</dimen>
+</resources>

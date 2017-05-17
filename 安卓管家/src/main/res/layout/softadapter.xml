@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:id="@+id/cb_item_soft_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:id="@+id/img_item_soft_ioce"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="2dp"
+        android:src="@mipmap/icon_phonemgr"
+        android:layout_toRightOf="@+id/cb_item_soft_select"/>
+
+    <TextView
+        android:id="@+id/tv_item__soft_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ddawdwa"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/img_item_soft_ioce"
+        />
+
+    <TextView
+        android:id="@+id/tv_tv_item__soft_packname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="dsadwadwa"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/img_item_soft_ioce"
+        android:layout_alignBottom="@+id/img_item_soft_ioce"/>
+    <TextView
+        android:id="@+id/tv_tv_item__soft_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:text="dawdwadwa"
+        />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 水平进度条背景的样式 -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp"/>
+            <solid android:color="#b3b1b1"/>
+        </shape>
+    </item>
+
+    <!-- 水平进度条表示进度的样式 -->
+    <item android:id="@android:id/progress">
+        <clip><!-- 剪裁-->
+            <shape android:shape="rectangle">
+                <corners android:radius="10dp"/>
+                <solid android:color="#17d4f5"/>
+            </shape>
+        </clip>
+
+    </item>
+</layer-list>

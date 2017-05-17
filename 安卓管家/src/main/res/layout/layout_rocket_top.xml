@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_rocket_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机型号"
+        android:textSize="26sp"
+        android:padding="4dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <ProgressBar
+        android:id="@+id/pb_rocket_rote"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_bg" />
+
+    <Button
+        android:id="@+id/bt_rocket_clear"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="一键清理"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:textColor="#fff"
+        android:background="@drawable/bt_rocket_bg"
+        />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/lin_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relay_root_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/img_root_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_bg_back"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#666"
+            android:layout_toRightOf="@+id/img_root_title"/>
+
+        <TextView
+            android:id="@+id/tv_root_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安卓管家"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#666"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

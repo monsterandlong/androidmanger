@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView 的直接子View是可以滑动的，如果屏幕显示不下就可以滚定显示
+如果能显示的下就不能滚动
+
+注意：该控件 只能有一个直接子View
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gfd.phone.activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开机启动"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/cb_setting_boot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:button="@drawable/check_setting_switch"
+                android:checked="false" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#666" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通知图标"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/cb_setting_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:button="@drawable/check_setting_switch"
+                android:checked="false" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#666" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息推送"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/cb_setting_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:button="@drawable/check_setting_switch"
+                android:checked="false" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#666" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帮助说明"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/img_setting_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/image_bg_pre" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#666" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="意见反馈"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/img_setting_idea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/image_bg_pre" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#666" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="好友分享"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/img_setting_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/image_bg_pre" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#666" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本更新"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/img_setting_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/image_bg_pre" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#666" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于我们"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/img_setting_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/image_bg_pre" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

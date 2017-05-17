@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.gfd.phone.activity.FilemgrActivity">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:background="#2c63d7"
+      >
+      <TextView
+          android:id="@+id/zhaodao"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="已找到"
+          android:textColor="#fff"
+          android:textSize="20dp"
+          android:textStyle="bold|italic"
+          android:layout_toLeftOf="@+id/tv_file_size"
+          android:layout_alignBaseline="@+id/tv_file_size"/>
+      <TextView
+          android:id="@+id/tv_file_size"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="20.0m"
+          android:textColor="#fff"
+          android:textSize="50dp"
+          android:textStyle="bold|italic"
+          android:layout_centerInParent="true"
+          />
+
+  </RelativeLayout>
+    //ScrollView为了让下面的控件可以下拉，
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#f1eeee"
+            >
+            <RelativeLayout
+                android:id="@+id/rela_fileshow_all"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#ffffff"
+                >
+                <TextView
+                    android:id="@+id/one"
+                    android:text="全部"
+                    style="@style/file_list" />
+                <TextView
+                    android:id="@+id/tv_file_all"
+                    android:text="准备中····"
+                    style="@style/file_size"
+                    android:layout_toRightOf="@+id/one"/>
+                <ImageView style="@style/file_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#00ffffff"/>
+            <RelativeLayout
+                android:id="@+id/rela_fileshow_word"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#ffffff">
+                <TextView
+                    android:id="@+id/two"
+                    android:text="文档"
+                    style="@style/file_list" />
+                <TextView
+                    android:id="@+id/tv_file_word"
+                    android:text="准备中····"
+                    style="@style/file_size"
+                    android:layout_toRightOf="@+id/two"/>
+                <ImageView style="@style/file_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#00ffffff"/>
+            <RelativeLayout
+                android:id="@+id/rela_fileshow_voide"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#ffffff">
+                <TextView
+                    android:id="@+id/threr"
+                    android:text="视频"
+                    style="@style/file_list" />
+                <TextView
+                    android:id="@+id/tv_file_voide"
+                    android:text="准备中····"
+                    style="@style/file_size"
+                    android:layout_toRightOf="@+id/threr"/>
+                <ImageView style="@style/file_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#00ffffff"/>
+            <RelativeLayout
+                android:id="@+id/rela_fileshow_andio"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#ffffff">
+                <TextView
+                    android:id="@+id/four"
+                    android:text="音频"
+                    style="@style/file_list" />
+                <TextView
+                    android:id="@+id/tv_file_audio"
+                    android:text="准备中····"
+                    style="@style/file_size"
+                    android:layout_toRightOf="@+id/four"/>
+                <ImageView style="@style/file_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#00ffffff"/>
+            <RelativeLayout
+                android:id="@+id/rela_fileshow_pic"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#ffffff">
+                <TextView
+                    android:id="@+id/five"
+                    android:text="图像"
+                    style="@style/file_list" />
+                <TextView
+                    android:id="@+id/tv_file_pic"
+                    android:text="准备中····"
+                    style="@style/file_size"
+                    android:layout_toRightOf="@+id/five"/>
+                <ImageView style="@style/file_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#00ffffff"/>
+            <RelativeLayout
+                android:id="@+id/rela_fileshow_zip"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#ffffff">
+                <TextView
+                    android:id="@+id/six"
+                    android:text="压缩包"
+                    style="@style/file_list" />
+                <TextView
+                    android:id="@+id/tv_file_yasuo"
+                    android:text="准备中····"
+                    style="@style/file_size"
+                    android:layout_toRightOf="@+id/six"/>
+                <ImageView style="@style/file_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#00ffffff"/>
+            <RelativeLayout
+                android:id="@+id/rela_fileshow_apk"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#ffffff">
+                <TextView
+                    android:id="@+id/seven"
+                    android:text="程序包"
+                    style="@style/file_list" />
+                <TextView
+                    android:id="@+id/tv_file_app"
+                    android:text="准备中····"
+                    style="@style/file_size"
+                    android:layout_toRightOf="@+id/seven"/>
+                <ImageView style="@style/file_right" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#00ffffff"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
